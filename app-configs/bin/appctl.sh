@@ -51,10 +51,10 @@ health_check() {
 }
 start_application() {
     echo "node environment"
-    ~/.nvm/versions/node/v14.8.0/bin/node --version
-    ~/.nvm/versions/node/v14.8.0/bin/npm --version
+    /home/ecs-assist-user/.nvm/versions/node/v14.8.0/bin/node --version
+    /home/ecs-assist-user/.nvm/versions/node/v14.8.0/bin/npm --version
     echo "starting nodejs process"
-    nohup ~/.nvm/versions/node/v14.8.0/bin/npm start > ${STD_OUT} 2>&1 &
+    nohup /home/ecs-assist-user/.nvm/versions/node/v14.8.0/bin/npm start > ${STD_OUT} 2>&1 &
     echo "started nodejs process"
 }
 
