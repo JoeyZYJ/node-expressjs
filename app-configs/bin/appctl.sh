@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# 加载 NVM 环境
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # 加载 nvm
+nvm use 14.8.0  # 指定使用的 Node 版本，如 14.17.6
+
 # 修改APP_NAME为云效上的应用名
 APP_NAME=application
 
