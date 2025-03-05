@@ -85,6 +85,7 @@ stop_application() {
 }
 start() {
     start_application
+    sleep 1000
     health_check
 }
 stop() {
