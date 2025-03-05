@@ -33,6 +33,7 @@ health_check() {
     while true
         do
             status_code=`/usr/bin/curl -L -o /dev/null --connect-timeout 5 -s -w %{http_code}  ${HEALTH_CHECK_URL}`
+            echo "status code is $status_code"
             if [ "$?" != "0" ]; then
                echo -n -e "\rapplication not started"
             else
