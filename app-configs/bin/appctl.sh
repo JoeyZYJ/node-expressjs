@@ -21,7 +21,7 @@ usage() {
     echo "Usage: $PROG_NAME {start|stop|restart}"
     exit 2
 }
-
+# 健康检查
 health_check() {
     exptime=0
     echo "checking ${HEALTH_CHECK_URL}"
